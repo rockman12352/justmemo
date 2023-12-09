@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <Button android:text="A" android:id="@+id/button1" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:textSize="20sp"></Button>
+    <Button android:text="A" android:id="@+id/button2" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:textSize="24sp"></Button>
+    <Button android:text="A" android:id="@+id/button3" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:textSize="32sp"></Button>
+    <Button android:text="A" android:id="@+id/button4" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:textSize="40sp"></Button>
+    <Button android:text="A" android:id="@+id/button5" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:textSize="48sp"></Button>
+</LinearLayout>

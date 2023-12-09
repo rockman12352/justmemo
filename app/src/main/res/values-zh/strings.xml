@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">极致便笺</string>
+    <string name="tools_hint">要框选好文字范围才能设置哦~</string>
+</resources>

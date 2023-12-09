@@ -1,4 +1,4 @@
-package com.rockman.justmemo
+package com.rockman.justmemox
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

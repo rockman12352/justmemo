@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">justmemo</string>
+    <string name="app_name">JustMemo</string>
+    <string name="tools_hint">Please select text</string>
 </resources>

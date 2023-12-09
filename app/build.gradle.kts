@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rockman.justmemo"
+    namespace = "com.rockman.justmemox"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rockman.justmemo"
+        applicationId = "com.rockman.justmemox"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -18,7 +18,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        resourceConfigurations += listOf("en", "zh")
     }
+
 
     buildTypes {
         release {
@@ -56,6 +58,12 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+
+    api("androidx.appcompat:appcompat:1.6.1")
+    implementation("org.ccil.cowan.tagsoup:tagsoup:1.2")
+    implementation("com.github.skydoves:colorpickerview:2.3.0")
+
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

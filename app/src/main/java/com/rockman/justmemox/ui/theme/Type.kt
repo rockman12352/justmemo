@@ -1,4 +1,4 @@
-package com.rockman.justmemo.ui.theme
+package com.rockman.justmemox.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
