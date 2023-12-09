@@ -1,4 +1,4 @@
-package com.rockman.justmemox.utils; /**
+package com.rockman.justmemo.utils; /**
  * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,4 +1,4 @@
-package com.rockman.justmemox.ui.theme
+package com.rockman.justmemo.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

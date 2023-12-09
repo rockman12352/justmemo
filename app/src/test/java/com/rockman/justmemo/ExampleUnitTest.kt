@@ -1,4 +1,4 @@
-package com.rockman.justmemox
+package com.rockman.justmemo
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

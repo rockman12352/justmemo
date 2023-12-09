@@ -1,4 +1,4 @@
-package com.rockman.justmemox.utils;
+package com.rockman.justmemo.utils;
 
 
 
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.rockman.justmemox.R;
+import com.rockman.justmemo.R;
 
 public class SizePicker extends RelativeLayout{
 	public boolean isLoaded=false;

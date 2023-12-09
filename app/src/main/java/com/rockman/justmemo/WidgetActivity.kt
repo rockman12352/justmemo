@@ -1,4 +1,4 @@
-package com.rockman.justmemox
+package com.rockman.justmemo
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -7,7 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.text.Spanned
 import android.widget.RemoteViews
-import com.rockman.justmemox.utils.MyHtml
+import com.rockman.justmemo.utils.MyHtml
 
 
 class WidgetActivity: AppWidgetProvider() {

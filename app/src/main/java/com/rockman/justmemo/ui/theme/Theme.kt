@@ -1,4 +1,4 @@
-package com.rockman.justmemox.ui.theme
+package com.rockman.justmemo.ui.theme
 
 import android.app.Activity
 import android.os.Build

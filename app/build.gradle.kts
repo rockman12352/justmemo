@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rockman.justmemox"
+    namespace = "com.rockman.justmemo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rockman.justmemox"
+        applicationId = "com.rockman.justmemo"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

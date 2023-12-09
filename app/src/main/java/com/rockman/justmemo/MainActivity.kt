@@ -1,4 +1,4 @@
-package com.rockman.justmemox
+package com.rockman.justmemo
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
@@ -22,8 +22,8 @@ import android.widget.RelativeLayout
 import android.widget.RemoteViews
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import com.rockman.justmemox.utils.MyHtml
-import com.rockman.justmemox.utils.SizePicker
+import com.rockman.justmemo.utils.MyHtml
+import com.rockman.justmemo.utils.SizePicker
 import com.skydoves.colorpickerview.ColorEnvelope
 import com.skydoves.colorpickerview.ColorPickerDialog
 import com.skydoves.colorpickerview.listeners.ColorEnvelopeListener
