@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">极致便笺</string>
     <string name="tools_hint">要框选好文字范围才能设置哦~</string>
+    <string name="loading">数据加载中...</string>
 </resources>

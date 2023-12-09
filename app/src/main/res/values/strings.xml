@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">JustMemo</string>
     <string name="tools_hint">Please select text</string>
+    <string name="loading">Data Loading...</string>
 </resources>

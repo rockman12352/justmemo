@@ -1,5 +1,7 @@
 package com.rockman.justmemox
 
+import android.appwidget.AppWidgetManager
+import android.content.ComponentName
 import android.content.DialogInterface
 import android.content.DialogInterface.OnClickListener
 import android.content.pm.ActivityInfo
@@ -17,6 +19,7 @@ import android.view.Window
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RelativeLayout
+import android.widget.RemoteViews
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.rockman.justmemox.utils.MyHtml
@@ -40,14 +43,6 @@ class MainActivity : ComponentActivity() {
 
         initEditor()
         initTools()
-//        setContent {
-//            JustmemoTheme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-//                    Greeting("Android")
-//                }
-//            }
-//        }
     }
 
     private fun initTools() {
@@ -154,7 +149,13 @@ class MainActivity : ComponentActivity() {
             val share = getSharedPreferences("JustMemo", MODE_PRIVATE)
             editor.clearComposingText()
             share.edit().putString("content", MyHtml.toHtml(editor.text)).apply()
-            println(MyHtml.toHtml(editor.text))
+
+            val appWidgetManager = AppWidgetManager.getInstance(this.applicationContext)
+            val views = RemoteViews(packageName, R.layout.widget)
+            views.setTextViewText(R.id.widget_tv, editor.text)
+
+            val widgetIds = appWidgetManager.getAppWidgetIds(ComponentName(this.applicationContext, WidgetActivity::class.java))
+            appWidgetManager.updateAppWidget(widgetIds, views)
             finish()
         }
         findViewById<Button>(R.id.btn_cancel).setOnClickListener {
@@ -196,6 +197,7 @@ class MainActivity : ComponentActivity() {
         sizePicker.b3.setOnClickListener(sizePickerOnClickListener)
         sizePicker.b4.setOnClickListener(sizePickerOnClickListener)
         sizePicker.b5.setOnClickListener(sizePickerOnClickListener)
+        sizePicker.b6.setOnClickListener(sizePickerOnClickListener)
     }
 
     private fun initEditor() {

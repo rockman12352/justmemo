@@ -119,20 +119,10 @@ public class MyHtml {
      * @return
      */
     public static String preHandleString(String str) {
-        if (str==null) {
-            return "";
-        }
-        if (str.equals("")) {
-            return "";
-        }
-        str = str.substring(0, str.length()-1);
         str = str.replaceAll("<br>\n", "<br>");
         str = str.replaceAll("<p>", "");
         str = str.replaceAll("</p>", "<br>");
         str = str.replaceAll("\n", "<br>");
-        if (str.length()>=4) {
-            str = str.substring(0,str.length()-4);
-        }
         return str;
     }
     /***
@@ -144,8 +134,9 @@ public class MyHtml {
      *
      * <p>This uses TagSoup to handle real HTML, including all of the brokenness found in the wild.
      */
-    public static Spanned fromHtml(String source, Html.ImageGetter imageGetter,
+    public static Spanned fromHtml(String sourcexxx, Html.ImageGetter imageGetter,
                                    Html.TagHandler tagHandler) {
+        String source = preHandleString(sourcexxx);
         Parser parser = new Parser();
         try {
             parser.setProperty(Parser.schemaProperty, HtmlParser.schema);
@@ -470,7 +461,7 @@ class HtmlToSpannedConverter implements ContentHandler {
             // We don't need to handle this. TagSoup will ensure that there's a </br> for each <br>
             // so we can safely emite the linebreaks when we handle the close tag.
         } else if (tag.equalsIgnoreCase("p")) {
-            // handleP(mSpannableStringBuilder);
+            handleP(mSpannableStringBuilder);
         } else if (tag.equalsIgnoreCase("div")) {
             handleP(mSpannableStringBuilder);
         } else if (tag.equalsIgnoreCase("em")) {

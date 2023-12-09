@@ -12,7 +12,7 @@ import com.rockman.justmemox.R;
 
 public class SizePicker extends RelativeLayout{
 	public boolean isLoaded=false;
-	public Button b1,b2,b3,b4,b5;
+	public Button b1,b2,b3,b4,b5,b6;
 	public SizePicker(Context context, LinearLayout tools) {
 		super(context);
 		float scale = context.getResources().getDisplayMetrics().density;
@@ -26,5 +26,6 @@ public class SizePicker extends RelativeLayout{
 		b3=(Button)sizes.findViewById(R.id.button3);
 		b4=(Button)sizes.findViewById(R.id.button4);
 		b5=(Button)sizes.findViewById(R.id.button5);
+		b6=(Button)sizes.findViewById(R.id.button6);
 	}
 }
